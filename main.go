@@ -49,6 +49,7 @@ func main() {
 
 	fullAddress := fmt.Sprintf("%s:%s", ipAddress, port)
 	log.Printf("Server running on http://%s", fullAddress)
+	log.Printf("Upload endpoint: http://%s/api/filehandler/", fullAddress)
 
 	if err := http.ListenAndServe(fullAddress, nil); err != nil {
 		log.Fatalf("Server startup error: %v", err)
