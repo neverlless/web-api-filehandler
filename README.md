@@ -15,13 +15,13 @@ A simple, yet powerful file server written in Go, designed to facilitate easy fi
 
 - `-port`: The port on which the server will listen for incoming requests. Default is `8080`.
 - `-dir`: The directory where uploaded files will be stored. Default is `./uploads`.
-- `-ip`: The IP address on which the server will listen for incoming requests. Default is `localhost`.
+- `-ip`: The IP address on which the server will listen for incoming requests. Default is `0.0.0.0`.
 - `-max-upload-size`: The maximum file size that can be uploaded to the server, in bytes. Default is `10485760` (10MB).
 
 To start the server, run the following command:
 
 ```bash
-web-api-filehandler -port 8080 -dir ./uploads -ip localhost -max-upload-size 10485760
+web-api-filehandler -port 8080 -dir ./uploads -ip 0.0.0.0 -max-upload-size 10485760
 ```
 
 ## Installation

@@ -22,7 +22,7 @@ var (
 func main() {
 	flag.StringVar(&port, "port", "8080", "Port for launching the web server")
 	flag.StringVar(&filesDir, "dir", "./files", "Directory for saving files")
-	flag.StringVar(&ipAddress, "ip", "localhost", "IP address for launching the server")
+	flag.StringVar(&ipAddress, "ip", "0.0.0.0", "IP address for launching the server")
 	flag.Int64Var(&maxUploadSize, "max-upload-size", 10<<20, "Maximum upload file size in bytes")
 	flag.Parse()
 
