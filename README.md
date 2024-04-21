@@ -24,6 +24,12 @@ To start the server, run the following command:
 web-api-filehandler -port 8080 -dir ./uploads -ip 0.0.0.0 -max-upload-size 10485760
 ```
 
+Api endpoints:
+
+- `POST /api/filehandler/`: Upload a file to the server.
+
+You can add subfolders if you use /api/filehandler/{subfolder} endpoint.
+
 ## Installation
 
 To install the `web-api-filehandler` server, you can use the following `go get` command:
